@@ -3,7 +3,7 @@ import './Header.css';
 function Header() {
 
   return (
-      <head>
+      <header>
         <title>Profile</title>
         <link href="profil.css" rel="stylesheet"/>
         <header className="header">
@@ -12,7 +12,7 @@ function Header() {
             </div>
             <h1>MySocial</h1>
         </header>
-    </head>
+    </header>
 );
 }
 

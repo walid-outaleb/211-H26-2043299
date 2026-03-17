@@ -7,7 +7,7 @@ const posts =
         {
             imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg",
             imgAlt: "Psychopomp",
-            title: "Psychopomp<",
+            title: "Psychopomp",
             desc: "Japanese Breakfast"
         },
         {
@@ -30,21 +30,21 @@ const posts =
         },
     ]
 const profile = {
-    profileImgSrc: "",
-    userName: "",
-    des: "",
-    nbPost: 4,
+    profileImgSrc: "https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces",
+    userName: "Jane Doe",
+    des: "Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️",
+    nbPost: posts.length,
     followers: 188,
     following: 206,
-    posts
+    posts,
 }
 
 function MainSection() {
 
   return (
         <main>
-        <ProfileSection/>
-        <CardList/>
+        <ProfileSection profile={profile}/>
+        <CardList profile={profile}/>
         </main>
 
 );
